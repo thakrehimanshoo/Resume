@@ -1,0 +1,280 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Himanshoo Thakre
+    }
+\end{center}
+
+\begin{center}
+    
+    \small \raisebox{-0.1\height}\faPhone\ +91 8421689569 ~ \href{mailto:thakrehimanshoo@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{thakrehimanshoo@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/thakrehimanshoo/}{\raisebox{-0.2\height}\faLinkedin\ \underline{www.linkedin.com/in/thakrehimanshoo}}  ~
+    \href{https://github.com/thakrehimanshoo}{\raisebox{-0.2\height}\faGithub\ \underline{thakrehimanshoo}}
+    \vspace{-8pt}
+\end{center}
+
+
+
+
+
+% -----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Technology, Kharagpur}{November 2021 -- May 2026}
+      {B.Tech + M.Tech in Chemical Engineering}{CGPA: 7.80/10}
+         \resumeSubheading
+      {St. Paul College}{April 2019 -- March 2020}
+      {Higher Secondary}{Percentage: 83.04\% }
+  \resumeSubHeadingListEnd
+ 
+
+
+%-----------Internships-----------
+\section{Internships}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+      {Full Stack Developer Intern | Insteasy}{May 2024 -- July 2024}
+      {}{}
+      \resumeItemListStart
+      \vspace{-4mm}
+        \resumeItem{Refactored entire dashboard using \textbf{Angular} and \textbf{Ionic}, improving load speed by \textbf{25\%} and enhancing UI consistency}
+        \resumeItem{Integrated \textbf{PayPal Gateway} with \textbf{React} and \textbf{Node.js}, enabling subscriptions and boosting conversion by \textbf{35\%}}
+
+        \resumeItem{Implemented \textbf{OAuth} for third-party login, reducing drop-off rate by \textbf{20\%} and streamlining user onboarding}
+        \resumeItem{Deployed the application on \textbf{Heroku}, streamlining the deployment process and ensuring a reliable, scalable environment}
+      \resumeItemListEnd
+      \resumeSubHeadingListEnd
+      
+
+%-----------Projects-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+      {KGPNetwork | Social Site}{May 2024}
+      {}{}
+      \resumeItemListStart
+      \vspace{-4mm}
+        \resumeItem{Developed KGPNetwork, a social network platform utilizing \textbf{Django}, achieving robust engagement with over \textbf{20+} users}
+        \resumeItem{Implemented Django for backend, \textbf{HTML/CSS/JS} for frontend, and \textbf{PostgreSQL} for data management in WebApp}
+        \resumeItem{Used Django's authentication system and integrated \textbf{Google OAuth}, ensuring data integrity and confidentiality}
+        \resumeItem{Engineered dynamic follow/unfollow modals using \textbf{JS} and \textbf{AJAX}, streamlining user interactions and engagement}
+      \resumeItemListEnd
+      
+        \resumeSubheading
+  {Advanced Question Search Engine $|$ Self Project}{June 2023}
+  {}{}
+        \resumeItemListStart
+        \vspace{-4mm}
+          \resumeItem{Developed a search engine using the \textbf{TF-IDF} algorithm for efficient and accurate retrieval of relevant DSA problems}
+          \resumeItem{Utilized \textbf{Selenium} and \textbf{Chrome Driver} for automated and reliable web scraping, extracting question links and data}
+          \resumeItem{Scraped 2400+ LeetCode problems, collecting titles, links, and detailed descriptions using \textbf{BeautifulSoup} and Selenium}
+        \resumeItem{Developed a dynamic and responsive \textbf{Flask}-based interface with HTML/CSS/JS to optimize search and enhance UX}
+       \resumeItemListEnd
+       
+        \resumeSubheading
+     {Dumble $|$ Clone Website of Bumble }{Dec. 2022}
+     {}{}
+    \resumeItemListStart
+    \vspace{-4mm}
+    \resumeItem{Developed a \textbf{Bumble clone} replicating design elements and core functionalities using HTML, CSS, JS, and Bootstrap}
+    \resumeItem{Utilized \textbf{Bootstrap} to ensure a responsive and consistent layout, optimizing adaptability across various screen sizes}
+    \resumeItem{Integrated interactive elements and animations via \textbf{JavaScript} to enhance engagement and deliver a dynamic experience}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-- Competion 
+
+ %----------Awards and achievements
+        \section{Competitions/Conference}
+         \resumeSubHeadingListStart
+       
+        \resumeItemListStart
+          
+        \vspace{-1mm}
+         
+         \resumeItem{Achieved \textbf{Specialist} title with peak rating of \textbf{1448} on Codeforces, showcasing programming skills (handle: \texttt{himansh00})}
+         \resumeItem{Attained a rank of \textbf{159} out of 15,900+ in \textbf{Codeforces Round 954 (Div. 3)}, showcasing problem-solving skills}
+         \resumeItem{Achieved \textbf{3-star} status with a peak rating of \textbf{1690} on CodeChef, reflecting CP proficiency (handle: \texttt{himansh00})}
+
+        
+        \resumeItemListEnd
+        \resumeSubHeadingListEnd
+
+
+    
+
+    %-----------Technical skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{0.5mm}
+     \textbf{Programming Languages \& Libraries:} {C, C++, JavaScript, Python, HTML, CSS, TypeScript} \\
+\textbf{Development Frameworks \& Databases:} {React, Node.js, Django, MongoDB, SQL, Angular, Ionic} \\
+\textbf{Tools \& Software:} {Jira, BitBucket, Git \& GitHub, Visual Studio Code, Heroku, WordPress, ASPEN, COMSOL} \\
+
+
+    }}
+ \end{itemize}
+ 
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {General Secretary Mess $|$ Nehru Hall of Residence}{Aug. 2024 – Present}
+  {}{}
+  \resumeItemListStart
+  \vspace{-4mm}
+  
+    \resumeItem{Oversaw a \textbf{Rs. 1.29 crore} annual mess budget, optimizing expenses and reducing monthly costs by \textbf{10\%} per boarder}
+    \resumeItem{Led a team of \textbf{30+} staff to deliver high-quality meals, achieving \textbf{95\%+} satisfaction in boarder feedback surveys}
+    \resumeItem{Introduced menu rotations and nutrition-focused planning, resulting in a \textbf{15\% rise} in healthy meal consumption}
+
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Design and Media Subhead $|$ Kshitij, IIT Kharagpur}{July 2022 – Apr. 2023}
+  {}{}
+  \resumeItemListStart
+  \vspace{-4mm}
+    \resumeItem{Designed impactful and engaging social media creatives, helping promote Kshitij to over \textbf{14,000+} active online followers}
+    \resumeItem{Mentored a team of \textbf{19} design associates, fostering creative skill development and delivering consistent design output}
+    \resumeItem{Produced 25+ creatives including event banners, ensuring brand consistency and driving a \textbf{20\% uptick} in registrations}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Skill and Interests-----------
+% \section{Coursework Information}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%     \vspace{1mm}
+%      \textbf{Credit Courses:} {Programming and Data Structures $|$ Transform Calculus $|$  Data Structures and Algorithms (MOOCs) $|$ Advanced Calculus $|$ Artificial Intelligence: Foundation and Application} \\
+%      \vspace{1mm}
+%  }}
+%  \end{itemize}
+
+
+
+
+
+\end{document}
